@@ -1,0 +1,327 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#map {
+    height: 93%;
+    width: 75%;
+    top: 7%;
+    bottom: 0;
+    left: 25%;
+    padding: 0;
+    margin: 0;
+}
+
+#map .cartodb-legend-stack {
+    width: 30%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#titlebar-one {
+    height: 7%;
+    width: 25%;
+    left: 25%;
+    position: absolute;
+    top: 0;
+    background: white;
+    overflow: hidden;
+    display: table;
+    text-align: center;
+}
+
+
+#titlebar-two {
+    height: 7%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    background: black;
+    left: 50%;
+    overflow: hidden;
+    display: table;
+}
+
+.title-one {
+    font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+    font-size: 110%;
+    color: #284a59;
+    overflow: hidden;
+    white-space: nowrap;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.title-two {
+    font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+    font-size: 110%;
+    color: #ffffff;
+    padding-left: 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about {
+    height: 60px;
+    width: 20px;
+    top: 20%;
+    left: 25%;
+    background: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    display: table;
+    cursor: pointer;
+}
+
+#about-title {
+    font-size: 10px;
+    color: white;
+    font-family: "HelveticaNeue-Bold", Helvetica, sans-serif;
+    transform: rotate(90deg);
+    transform-origin: right, top;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    }
+
+#about-inset {
+    height: 285px;
+    width: 175px;
+    top: 20%;
+    left: 25%;
+    background: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#about-text {
+    font-size: 10px;
+    color: white;
+    font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+    position: relative;
+    padding: 5px, 5px, 5px, 5px;
+    visibility: hidden;
+}
+
+#dashboard {
+    top: 7%;
+    width: 25%;
+    height: 93%;
+    padding: 0;
+    margin: 0;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    overflow: auto;
+    border-right: 1px solid white;
+}
+
+#dashboard-title-container {
+    height: 10%;
+    width: 100%;
+    background: black;
+}
+
+#dashboard-title {
+    color: white;
+    font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+    font-size: 110%, 18px;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#selector_container {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    height: 10%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#selector_menu {
+    position: absolute;
+    top: 0;
+    left: 7%;
+    z-index: 9000;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color: white;
+    font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+    float:left;
+    clear: both;
+}
+
+.selector {
+    background: black;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    margin-right: 10%;
+    clear:both;
+}
+
+#d3-elements {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    height: 80%;
+}
+
+.legend_template {
+    height: auto;
+    width: auto;
+}
+
+.bubbles {
+    color: rgba(0,0,0,0.8);
+}
+
+
+#photo {
+    height: 7%;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: inline-block;
+    background: white;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+.leaflet-label {
+    background: #1E1E1E;
+    color: #fff;
+    font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+    font-size: 12px;
+    width: 175px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    border: 5px solid rgba(255,255,255,0.25);
+}
+
+.leaflet-label p {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    float: right;
+    font-family: "HelveticaNeue-Bold", Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+u {    
+    border-bottom: 1px dotted #fff;
+    text-decoration: none;
+}
+
+.axis {
+    stroke: white;
+    stroke-width: 1;
+    fill: none;
+}
+
+.x axis {
+    stroke: white;
+    stroke-width: 1;
+    fill: none;
+}
+
+.y axis {
+    stroke: white;
+    stroke-width: 1;
+    fill: none;
+}
+
+.axis text {
+    font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+    font-size: 8px;
+}
+
+#scatterplot-title {
+    font-family: monospace, Helvetica, sans-serif;
+    font-size: 10px;
+    fill: white;
+    text-rendering: geometricPrecision;
+}
+
+#circle-title {
+    right: 20px;
+    bottom: 130px;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+}
+
+#circle-max {
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255,140,0,0.75);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    position: absolute;
+    visibility: hidden;
+}
+
+#circle-min {
+    right: 48px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+    background: rgba(152,171,197,0.75);
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    border-radius: 50px;
+    border: 1px solid white;
+    position: absolute;
+    z-index: 9000;
+    visibility: hidden;
+}
+
+.circle-text {
+    font-size: 10px;
+    font-family: "HelveticaNeue-Bold", Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    visibility: hidden;
+}
