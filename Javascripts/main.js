@@ -113,7 +113,7 @@
         
         // create the layers and wire them to click events
         
-        cartodb.createLayer(map, layerSource, {legends: true})
+        cartodb.createLayer(map, layerSource, {legends: true, https: true})
         .addTo(map)
         .done(function(layer){
             
@@ -350,9 +350,12 @@
 
       // create the scatterplot svg
       var svg = d3.select("#d3-elements")
+        .append("div")
+        .classed("svg-container", true)
         .append("svg")
-        .attr("width", w + margin.left + margin.right)
-        .attr("height", h + margin.top + margin.bottom)
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 300 225")
+        .classed("svg-content-responsive", true)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -797,9 +800,12 @@
 
       // create the ring chart svg
      var svgBar = d3.select("#d3-elements")
-                    .append("svg")
-                    .attr("width", w + margin.left + margin.right)
-                    .attr("height", h + margin.top + margin.bottom);
+        .append("div")
+        .classed("svg-container-2", true)
+        .append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 300 225")
+        .classed("svg-content-responsive", true);
 
       //Create bars
      svgBar.selectAll("rect")
@@ -895,7 +901,7 @@
 
       // append a title
       svgBar.append("text")
-        .text("Distribution of Crash Density by Borough")
+        .text("Crash Density by Borough")
         .attr("id", "bar-title")
         .attr("x", w/2 + margin.left)             
         .attr("y", 10)
@@ -1038,7 +1044,7 @@
 
           // now just change the title
               svgBar.select("#bar-title")
-                    .text("Distribution of Crash Densities in the Bronx");
+                    .text("Crash Densities in Bronx City Council Districts");
 
           },
           brooklyn: function(){
@@ -1173,7 +1179,7 @@
 
           // now just change the title
               svgBar.select("#bar-title")
-                    .text("Distribution of Crash Densities in Brooklyn");
+                    .text("Crash Densities in Brooklyn City Council Districts");
           },
           manhattan: function(){
 
@@ -1308,7 +1314,7 @@
 
           // now just change the title
               svgBar.select("#bar-title")
-                    .text("Distribution of Crash Densities in Manhattan");
+                    .text("Crash Densities in Manhattan City Council Districts");
           },
           queens: function(){
           // update the dataset
@@ -1442,7 +1448,7 @@
 
           // now just change the title
               svgBar.select("#bar-title")
-                    .text("Distribution of Crash Densities in Queens");
+                    .text("Crash Densities in Queens City Council Districts");
           },
           statenisland: function(){
 
@@ -1577,7 +1583,7 @@
 
           // now just change the title
               svgBar.select("#bar-title")
-                    .text("Distribution of Crash Densities on Staten Island");
+                    .text("Crash Densities in Staten Island City Council Districts");
           },
           reset: function(){
 
