@@ -325,3 +325,21 @@ u {
     text-align: center;
     visibility: hidden;
 }
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.svg-container-2 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    top: 47.5%;
+}
+
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+}
