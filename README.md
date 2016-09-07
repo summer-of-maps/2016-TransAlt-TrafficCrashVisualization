@@ -19,7 +19,7 @@ This web application is intended for use by New York City community organization
 The code for this application is open and free to be forked, modified, or repurposed.
 
 ### Acknowledgements
-[Parker Ziegler](http://parkerziegler.com/) was the lead developer and designer for this project. Special to Daniel McGlone, Senior GIS Analyst at Azavea, for his mentorship on this project.
+[Parker Ziegler](http://parkerziegler.com/) was the lead developer and designer for this project. Special thanks to Daniel McGlone, Senior GIS Analyst at Azavea, for his mentorship on this project.
 
 Thanks are also due to [Mike Bostock](https://bost.ocks.org/mike/), the creator of D3, and [Scott Murray](http://alignedleft.com/tutorials) for his extremely helpful D3 tutorials.
 
